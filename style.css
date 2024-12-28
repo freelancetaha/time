@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+}
+body{
+    background: #222121;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    height: 9rem;
+    width: 28rem;
+    background: #292828;
+    border: 2px solid #c4b004;
+    border-radius: 10px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container::after{
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    background: #c4b004;
+    height: 13px;
+    width: 20rem;
+    border-radius: 0 0 10px 10px;
+}
+.timeOptions{
+    display: flex;
+    flex-direction: column;
+    color: #b4b4b4;
+    position: absolute;
+    left: 6px;
+    top: 40px;
+    gap: 10px;
+    font-size: 13px;
+}
+#clock{
+    color: #c0c0c0;
+    font: 4rem sans-serif;
+}
